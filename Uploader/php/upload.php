@@ -30,7 +30,7 @@ error_reporting(0);
 			}
 		}
 	else
-	 {	echo "Protected with password";	 }
+	 { echo "Protected with password"; }
  }
 ?> 
  </body>
